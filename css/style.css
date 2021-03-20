@@ -37,6 +37,7 @@ img {
 .container {
     width: 1200px;
     padding: 0 15px;
+    margin: 0 auto;
 }
 
 
@@ -176,11 +177,7 @@ img {
 /* MAIN! */
 /* hero */
 
-.container {
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
+
 
 .hero {
     background-color: var(--section);
@@ -188,7 +185,12 @@ img {
     max-width: 1600px;
 }
 
-.hero-title {
+.hero-section {
+    display: block;
+    padding-bottom: 200px;
+}
+
+.hero-section__title {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -205,12 +207,7 @@ img {
     padding-right: 272px;
 }
 
-.hero-main.container {
-    display: block;
-    padding-bottom: 200px;
-}
-
-.hero-main .button {
+.hero-section__button {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -219,9 +216,6 @@ img {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-}
-
-.hero-main .button.link {
     display: block;
     white-space: nowrap;
     margin-left: auto;
@@ -231,7 +225,9 @@ img {
     padding: 10px 32px 10px 32px;
     max-width: 200px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--hover-text);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 /* features */

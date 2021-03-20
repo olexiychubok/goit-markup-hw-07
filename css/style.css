@@ -29,7 +29,7 @@ img {
 
 /* for all */
 
-.link {
+.no-dots {
     list-style: none;
     text-decoration: none;
 }
@@ -45,7 +45,7 @@ img {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
-.header .container {
+.container-header {
     min-height: 80px;
     display: flex;
     justify-content: space-between;
@@ -61,16 +61,19 @@ img {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--hover-text);
 }
 
 .logo-web {
+    color: var(--hover-text);
+}
+
+.logo-studio {
     color: var(--main-text);
 }
 
 /* site-nav */
 
-.site-nav {
+.nav-list {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -83,12 +86,12 @@ img {
     display: flex;
 }
 
-.link .item.current {
+.current {
     color: var(--hover-text);
     position: relative;
 }
 
-.item.current::after {
+.current::after {
     position: absolute;
     display: block;
     content: " ";
@@ -101,29 +104,29 @@ img {
     opacity: 0;
 }
 
-.item.current::after {
+.current::after {
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link .item:first-child {
+.nav-list__link:first-child {
     margin-left: 0px;
 }
 
-.site-nav .link .item {
+.nav-list__link {
     display: block;
     text-decoration: none;
     padding: 32px 0px 32px 0px;
     margin: 0px 50px 0px 50px;
     color: var(--main-text)
 }
-
-.site-nav .link:last-child {
+/* 
+.nav-list__link:last-child {
     margin-right: 181px;
-}
+} */
 
-.site-nav .link .item:hover,
-.site-nav .link .item:focus {
+.nav-list__link:hover,
+.nav-list__link:focus {
     color: var(--hover-text);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -142,30 +145,30 @@ img {
     display: flex;    
 }
 
-.contact li:first-child {
+.contact__link:first-child {
     padding-right: 50px;
 }
 
-.contact .link .item {
+.contact__item {
     list-style: none;
     text-decoration: none;
     color: var(--link-text);
 }
 
-.contact .link .item:hover,
-.contact .link .item:focus {
+.contact__item:hover,
+.contact__item:focus {
     color: var(--hover-text);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact .link .contacts-icon {
+.contact__img {
     display: inline-block;
     margin-right: 10px;
     vertical-align: middle;
     fill: rgba(117, 117, 117, 1);
 }
 
-.contact .link .item:hover .contacts-icon {
+.contact__item:hover .contact__img {
     fill: var(--hover-text);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

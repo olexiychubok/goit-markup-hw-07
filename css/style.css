@@ -293,7 +293,7 @@ img {
 
 /* doing */
 
-.doing-title {
+.doing__title {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -305,7 +305,7 @@ img {
     padding-bottom: 50px;
 }
 
-.doing-list.link {
+.doing__list {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 94px;
@@ -314,19 +314,19 @@ img {
     justify-content: space-between;
 }
 
-.doing-img:nth-last-child(n+1) {
-    margin-left: 30px;
-}
-
-.doing-img:first-child {
-    margin-left: 0px;
-}
-
-.doing-img {
+.doing__img {
     position: relative;
 }
 
-.doing-img > .thumb-text {
+.doing__img:nth-last-child(n+1) {
+    margin-left: 30px;
+}
+
+.doing__img:first-child {
+    margin-left: 0px;
+}
+
+.doing__text {
     font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 14px;

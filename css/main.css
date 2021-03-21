@@ -142,12 +142,13 @@ img {
   max-width: 100%;
 }
 
-/* for all */
-.no-dots {
+ul,
+a {
   list-style: none;
   text-decoration: none;
 }
 
+/* for all */
 .container {
   width: 1200px;
   padding: 0 15px;

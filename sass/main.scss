@@ -1,22 +1,6 @@
-@import 'utils/_variables.scss';
-
-html,
-body {
-    max-width: 1600px;
-    margin: auto;
-}
-
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
+@import 'base/normalize';
+@import 'utils/variables';
+@import 'base/defaults';
 
 /* for all */
 
@@ -30,7 +14,6 @@ img {
     padding: 0 15px;
     margin: 0 auto;
 }
-
 
 .header {
     background-color: $second-text;

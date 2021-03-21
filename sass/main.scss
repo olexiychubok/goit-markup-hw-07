@@ -1,13 +1,4 @@
-:root {
-    --second-text: rgba(255, 255, 255, 1);
-    --main-text: rgba(33, 33, 33, 1);
-    --hover-text: rgba(33, 150, 243, 1);
-    --link-text: rgba(117, 117, 117, 1);
-    --address-text-op60: rgba(255, 255, 255, 0.6);
-    --section: rgba(47, 48, 58, 1);
-    --section-team: rgba(245, 244, 250, 1);
-    --social-networks: rgba(175, 177, 184, 1);
-}
+@import 'utils/_variables.scss';
 
 html,
 body {
@@ -42,7 +33,7 @@ img {
 
 
 .header {
-    background-color: var(--second-text);
+    background-color: $second-text;
     border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
@@ -65,11 +56,11 @@ img {
 }
 
 .logo--blue {
-    color: var(--hover-text);
+    color: $hover-text;
 }
 
 .logo--black {
-    color: var(--main-text);
+    color: $main-text;
 }
 
 /* site-nav */
@@ -88,7 +79,7 @@ img {
 }
 
 .nav-list__link--current {
-    color: var(--hover-text);
+    color: $hover-text;
     position: relative;
 }
 
@@ -100,7 +91,7 @@ img {
     bottom: -1px;
     width: 100%;
     height: 4px;
-    background-color: var(--hover-text);
+    background-color: $hover-text;
     border-radius: 2px;
     opacity: 0;
 }
@@ -123,12 +114,12 @@ img {
     text-decoration: none;
     padding: 32px 0px 32px 0px;
     margin: 0px 50px 0px 50px;
-    color: var(--main-text)
+    color: $main-text
 }
 
 .nav-list__link--aim:hover,
 .nav-list__link--aim:focus {
-    color: var(--hover-text);
+    color: $hover-text;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -153,12 +144,12 @@ img {
 .contact__item {
     list-style: none;
     text-decoration: none;
-    color: var(--link-text);
+    color: $link-text;
 }
 
 .contact__item--aim:hover,
 .contact__item--aim:focus {
-    color: var(--hover-text);
+    color: $hover-text;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -170,7 +161,7 @@ img {
 }
 
 .contact__item--aim:hover .contact__img {
-    fill: var(--hover-text);
+    fill: $hover-text;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -178,7 +169,7 @@ img {
 /* hero */
 
 .hero {
-    background-color: var(--section);
+    background-color: $section;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img.jpg);
     max-width: 1600px;
 }
@@ -197,7 +188,7 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--second-text);
+    color: $second-text;
     display: inline-block;
     padding-top: 200px;
     padding-bottom: 30px;
@@ -218,12 +209,12 @@ img {
     white-space: nowrap;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--hover-text);
-    color: var(--second-text);
+    background-color: $hover-text;
+    color: $second-text;
     padding: 10px 32px 10px 32px;
     max-width: 200px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: 2px solid var(--hover-text);
+    border: 2px solid $hover-text;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -250,7 +241,7 @@ img {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-text);
+    color: $main-text;
     width: 270px;
 }
 
@@ -285,7 +276,7 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-transform: none;
-    color: var(--link-text);
+    color: $link-text;
     display: inline ;
 }
 
@@ -299,7 +290,7 @@ img {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-text);
+    color: $main-text;
     padding-bottom: 50px;
 }
 
@@ -332,7 +323,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--second-text);
+    color: $second-text;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,7 +339,7 @@ img {
 /* team */
 
 .team {
-    background-color: var(--section-team);
+    background-color: $section-team;
 }
 
 .team__title {
@@ -359,7 +350,7 @@ img {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-text);
+    color: $main-text;
     padding-top: 94px;
     padding-bottom: 50px;
 }
@@ -407,7 +398,7 @@ img {
     line-height: 1.9;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-text);
+    color: $main-text;
     padding-bottom: 10px;
 }
 
@@ -419,7 +410,7 @@ img {
     line-height: 1.9;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--link-text);
+    color: $link-text;
     padding-bottom: 16px;
 }
 
@@ -444,12 +435,12 @@ img {
     height: 44px;
     border-radius: 50%;
     background-color: #fff;
-    fill: var(--social-networks);
+    fill: $social-networks;
 }
 
 .social__link--aim:hover {
     fill: #fff;
-    background-color: var(--hover-text);
+    background-color: $hover-text;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -465,7 +456,7 @@ img {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-text);
+    color: $main-text;
     padding-top: 94px;
     padding-bottom: 50px;
 }
@@ -485,7 +476,7 @@ img {
     justify-content: center;
     width: 170px;
     height: 90px;
-    border: 1px solid var(--social-networks);
+    border: 1px solid $social-networks;
     border-radius: 4px;
     margin-left: 30px;
 }
@@ -495,7 +486,7 @@ img {
 }
 
 .customers__item--aim:hover {
-    border: 1px solid var(--hover-text);
+    border: 1px solid $hover-text;
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -506,18 +497,18 @@ img {
     justify-content: center;
     width: 100%;
     height: 100%;
-    fill: var(--social-networks);
+    fill: $social-networks;
 }
 
 .customers__link--aim:hover {
-    fill: var(--hover-text);
+    fill: $hover-text;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
 
 .footer {
-    background-color: var(--section);
+    background-color: $section;
 }
 
 .all-footer {
@@ -525,7 +516,7 @@ img {
 }
 
 .logo--white {
-    color: var(--second-text);
+    color: $second-text;
 }
 
 .logo-footer {
@@ -549,7 +540,7 @@ img {
 }
 
 .address__text {
-    color: var(--second-text);
+    color: $second-text;
 }
 
 .address__item:last-child {
@@ -559,12 +550,12 @@ img {
 }
 
 .address__item {
-    color: var(--link-text);
+    color: $link-text;
 }
 
 .address__item--aim:hover,
 .address__item--aim:focus {
-    color: var(--hover-text);
+    color: $hover-text;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -584,7 +575,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--second-text);
+    color: $second-text;
     padding-bottom: 20px;
 }
 
@@ -610,12 +601,12 @@ img {
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--second-text);
+    fill: $second-text;
 }
 
 .footer-social__link--aim:hover {
     fill: #fff;
-    background-color: var(--hover-text);
+    background-color: $hover-text;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -641,7 +632,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--second-text);
+    color: $second-text;
     padding-bottom: 20px;
 }
 
@@ -655,7 +646,7 @@ img {
     width: 358px;
     height: 50px;
     padding-left: 16px;
-    background-color: var(--section);
+    background-color: $section;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -669,7 +660,7 @@ img {
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
-    border: solid 1px var(--hover-text);
+    border: solid 1px $hover-text;
     padding: 6px 22px 6px 22px;
     border-radius: 4px;
     cursor: pointer;
@@ -679,8 +670,8 @@ img {
     margin-left: 12px;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: var(--second-text);
-    background-color: var(--hover-text);
+    color: $second-text;
+    background-color: $hover-text;
     width: 200px;
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -699,7 +690,7 @@ img {
 }
 
 .portfolio {
-    background-color: var(--second-text);
+    background-color: $second-text;
 }
 
 .portfolio__title {
@@ -715,8 +706,8 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     border: none;
-    background-color: var(--section-team);
-    color: var(--main-text);
+    background-color: $section-team;
+    color: $main-text;
     outline: none;
     padding: 6px 22px 6px 22px;
     border-radius: 4px;
@@ -725,8 +716,8 @@ img {
 
 .button--hue:hover,
 .button--hue:focus {
-    background-color: var(--hover-text);
-    color: var(--second-text);
+    background-color: $hover-text;
+    color: $second-text;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -766,7 +757,7 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--main-text);
+    color: $main-text;
 }
 
 .project__text {
@@ -776,7 +767,7 @@ img {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    color: var(--link-text);
+    color: $link-text;
     margin-top: 4px;
 }
 
@@ -834,7 +825,7 @@ img {
     line-height: 1.55;    
     letter-spacing: 0.03em;
     text-align: left;
-    color: var(--second-text);
+    color: $second-text;
     display: block;
     content: " ";
     padding: 63px 24px;
@@ -887,7 +878,7 @@ img {
 .modal {
     min-width: 528px;
     min-height: 581px;
-    background-color: var(--second-text);
+    background-color: $second-text;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -903,7 +894,7 @@ img {
     width: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background-color: var(--white-text);
+    background-color: $white-text;
     cursor: pointer;
     outline: none;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -918,7 +909,7 @@ img {
 }
 
 .modal__button--fill:hover .modal__x {
-    fill: var(--hover-text);
+    fill: $hover-text;
 }
 
 .modal__title {
@@ -929,7 +920,7 @@ img {
     line-height: 1,15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-text);
+    color: $main-text;
     padding-top: 40px;
     padding-bottom: 12px;
 }
@@ -954,7 +945,7 @@ img {
     font-size: 12px;
     line-height: 1,2;
     letter-spacing: 0.01em;
-    color: var(--link-text);
+    color: $link-text;
     padding-bottom: 4px;
 }
 
@@ -968,7 +959,7 @@ img {
 }
 
 .form-name__input--target:focus {
-    border: 1px solid var(--hover-text);
+    border: 1px solid $hover-text;
     outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -982,7 +973,7 @@ img {
 }
 
 .form-name__input--target:focus ~ .form-name__img {
-    fill: var(--hover-text);
+    fill: $hover-text;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1001,7 +992,7 @@ img {
     font-size: 12px;
     line-height: 1,2;
     letter-spacing: 0.01em;
-    color: var(--link-text);
+    color: $link-text;
     padding-bottom: 4px;
 }
 
@@ -1015,7 +1006,7 @@ img {
 }
 
 .form-tel__input--target:focus {
-    border: 1px solid var(--hover-text);
+    border: 1px solid $hover-text;
     outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1028,7 +1019,7 @@ img {
 }
 
 .form-tel__input--target:focus ~ .form-tel__img {
-    fill: var(--hover-text);
+    fill: $hover-text;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1046,7 +1037,7 @@ img {
     font-size: 12px;
     line-height: 1,2;
     letter-spacing: 0.01em;
-    color: var(--link-text);
+    color: $link-text;
     padding-bottom: 4px;
 }
 
@@ -1060,7 +1051,7 @@ img {
 }
 
 .form-mail__input--target:focus {
-    border: 1px solid var(--hover-text);
+    border: 1px solid $hover-text;
     outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1073,7 +1064,7 @@ img {
 }
 
 .form-mail__input--target:focus ~ .form-mail__img {
-    fill: var(--hover-text);
+    fill: $hover-text;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1091,7 +1082,7 @@ img {
     font-size: 12px;
     line-height: 1,2;
     letter-spacing: 0.01em;
-    color: var(--link-text);
+    color: $link-text;
     padding-bottom: 4px;
 }
 
@@ -1099,7 +1090,7 @@ img {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
-    color: var(--main-text);
+    color: $main-text;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
@@ -1108,7 +1099,7 @@ img {
 
 .form-textarea__ta--target:focus {
     padding: 12px 16px;
-    border: 1px solid var(--hover-text);
+    border: 1px solid $hover-text;
     outline: none;
     resize: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1136,7 +1127,7 @@ img {
     -webkit-appearance: none;
     width: 16px;
     height: 15px;
-    border: 2px solid var(--main-text);
+    border: 2px solid $main-text;
     border-radius: 2px;
     outline: none;
 }
@@ -1152,7 +1143,7 @@ img {
 }
 
 .form-checkbox__input--custom-check:checked {
-    border: 2px solid var(--hover-text);
+    border: 2px solid $hover-text;
     border-radius: 2px;
     background-origin: border-box;
 }
@@ -1160,7 +1151,7 @@ img {
 .form-checkbox__input--custom-check:checked + .form-checkbox__img {
     outline: none;
     display: inline-block;
-    background-color: var(--hover-text);
+    background-color: $hover-text;
     background-origin: border-box;
     border-radius: 2px;
 }
@@ -1184,7 +1175,7 @@ img {
     font-size: 14px;
     line-height: 1,71;
     letter-spacing: 0.03em;
-    color: var(--hover-text);
+    color: $hover-text;
     vertical-align: top;
 }
 
@@ -1196,7 +1187,7 @@ img {
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
-    border: solid 1px var(--hover-text);
+    border: solid 1px $hover-text;
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -1206,8 +1197,8 @@ img {
     margin-left: 124px;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: var(--second-text);
-    background-color: var(--hover-text);
+    color: $second-text;
+    background-color: $hover-text;
     width: 200px;
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
